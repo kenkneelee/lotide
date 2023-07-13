@@ -43,9 +43,9 @@ const without = function(source, itemsToRemove) {
 
 // TEST CODE
 // Test Case: Arrays of numbers
-assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); 
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
 // Test Case: Arrays of mixed data types
-assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); 
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
 // Test Case: Arrays of strings
 assertArraysEqual(
   without(
@@ -53,7 +53,7 @@ assertArraysEqual(
     ["Labs", "Development"]
   ),
   ["Lighthouse", "Web", "Flex", "Bootcamp"]
-); 
+);
 // Test Case: Multiple same-value booleans
 assertArraysEqual(without([true, true, true, false, false], [false]), [
   true,
@@ -62,6 +62,12 @@ assertArraysEqual(without([true, true, true, false, false], [false]), [
 ]);
 // Test Case: Multiple same-value numbers
 assertArraysEqual(without([1, 1, 2, 3, 5, 8], [1]), [2, 3, 5, 8]);
+// Test Case: Empty arrays
+assertArraysEqual(without([], []), []);
+// Test Case: No items to remove
+assertArraysEqual(without(["a", "b", "c"], []), ["a", "b", "c"]);
+// Test Case: Remove all items
+assertArraysEqual(without([1, 2, 3], [1, 2, 3]), []);
 
 // Test Case: Make sure original array is not modified
 const words = ["hello", "world", "lighthouse"];
