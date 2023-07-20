@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
   // use traditional for loop instead of for..of loop to access the index easily
@@ -20,7 +20,7 @@ const letterPositions = function (sentence) {
 // TEST CODE
 // TEST HELPER FUNCTIONS
 // Function to check whether two arrays are equal
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   let equalElements = 0;
   console.log(`⏳Checking array [${array1}] against array [${array2}]⏳`);
 
@@ -48,7 +48,7 @@ const eqArrays = function (array1, array2) {
   }
 };
 
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅Array Assertion Passed: [${array1}] === [${array2}]`);
   } else {
