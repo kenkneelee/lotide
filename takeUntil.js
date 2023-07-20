@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   // Declare empty output array
   let output = [];
   // Iterate through input array
@@ -19,7 +19,7 @@ const takeUntil = function (array, callback) {
 // TEST CODE
 // HELPER FUNCTIONS
 // Helper function to check whether two arrays are equal
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (
     Array.isArray(array1) &&
     Array.isArray(array2) &&
@@ -36,7 +36,7 @@ const eqArrays = function (array1, array2) {
 };
 
 // Assertion to log whether arrays are equal
-const assertArraysEqual = function (array1, array2) {
+const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log(`✅Array Assertion Passed: [${array1}] === [${array2}]`);
   } else {
