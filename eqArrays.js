@@ -23,7 +23,6 @@ const eqArrays = function(array1, array2) {
     !Array.isArray(array2) ||
     array1.length !== array2.length
   ) {
-    console.log("Invalid input(s)");
     return false;
   }
 
