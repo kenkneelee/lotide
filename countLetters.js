@@ -25,20 +25,20 @@ const countLetters = function(sentence) {
 
 // TEST CODE
 // String with no repeated characters
-const result3 = countLetters("The quick brown");
-assertEqual(result3["T"], 1);
-assertEqual(result3["h"], 1);
-assertEqual(result3["e"], 1);
-assertEqual(result3["q"], 1);
-assertEqual(result3["u"], 1);
-assertEqual(result3["i"], 1);
-assertEqual(result3["c"], 1);
-assertEqual(result3["k"], 1);
-assertEqual(result3["b"], 1);
-assertEqual(result3["r"], 1);
-assertEqual(result3["o"], 1);
-assertEqual(result3["w"], 1);
-assertEqual(result3["n"], 1);
+const result0 = countLetters("The quick brown");
+assertEqual(result0["T"], 1);
+assertEqual(result0["h"], 1);
+assertEqual(result0["e"], 1);
+assertEqual(result0["q"], 1);
+assertEqual(result0["u"], 1);
+assertEqual(result0["i"], 1);
+assertEqual(result0["c"], 1);
+assertEqual(result0["k"], 1);
+assertEqual(result0["b"], 1);
+assertEqual(result0["r"], 1);
+assertEqual(result0["o"], 1);
+assertEqual(result0["w"], 1);
+assertEqual(result0["n"], 1);
 
 // Repeated letters
 const result1 = countLetters("LHL");
@@ -59,16 +59,16 @@ assertEqual(result2["e"], 3);
 assertEqual(result2["n"], 1);
 
 // Upper and lowercase
-const result4 = countLetters("aAbBcCdDeEfF");
-assertEqual(result4["a"], 1);
-assertEqual(result4["A"], 1);
-assertEqual(result4["b"], 1);
-assertEqual(result4["B"], 1);
-assertEqual(result4["c"], 1);
-assertEqual(result4["C"], 1);
-assertEqual(result4["d"], 1);
-assertEqual(result4["D"], 1);
-assertEqual(result4["e"], 1);
-assertEqual(result4["E"], 1);
-assertEqual(result4["f"], 1);
-assertEqual(result4["F"], 1);
+const result3 = countLetters("aAbBcCdDeEfF");
+assertEqual(result3["a"], 1);
+assertEqual(result3["A"], 1);
+assertEqual(result3["b"], 1);
+assertEqual(result3["B"], 1);
+assertEqual(result3["c"], 1);
+assertEqual(result3["C"], 1);
+assertEqual(result3["d"], 1);
+assertEqual(result3["D"], 1);
+assertEqual(result3["e"], 1);
+assertEqual(result3["E"], 1);
+assertEqual(result3["f"], 1);
+assertEqual(result3["F"], 1);
