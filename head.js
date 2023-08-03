@@ -1,9 +1,7 @@
-const assertEqual = require (`./assertEqual`)
-
+// FUNCTION IMPLEMENTATION
+// Return the first element of input if it is an array
 const head = function(array) {
-  if (Array.isArray(array)) {
-    return array[0];
-  }
+  return Array.isArray(array) ? array[0] : undefined;
 };
 
-module.exports = head
+module.exports = head;
