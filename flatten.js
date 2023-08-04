@@ -37,6 +37,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
+// Function that given nested array, flattens inside arrays and moves them one level up
 const flatten = function(nestedArray) {
   let finalArray = [];
   for (let elem of nestedArray) {

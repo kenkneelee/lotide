@@ -1,3 +1,4 @@
+// Function that, given an array and callback, returns new array with all original values until the first value that fulfills callback
 // FUNCTION IMPLEMENTATION
 const takeUntil = function(array, callback) {
   // Declare empty output array

@@ -1,3 +1,4 @@
+// Function that returns an array of the middle value(s) of an input array
 // FUNCTION IMPLEMENTATION
 const middle = function(arr) {
   if (arr.length <= 2) {

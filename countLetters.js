@@ -4,6 +4,7 @@ const assertEqual = function(actual, expected) {
     : console.log(`❗️❗️❗️Assertion Failed: ${actual} !== ${expected}`);
 };
 
+// Function that, given an input sentence, returns an object with key:value pairs corresponding to occurrences of each character
 // FUNCTION IMPLEMENTATION
 const countLetters = function(sentence) {
   // Declare empty array to populate with letter:count pairs

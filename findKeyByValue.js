@@ -1,15 +1,15 @@
 // FUNCTION IMPLEMENTATION
 // Test helper function
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   actual === expected
     ? console.log(`🚀🚀🚀Assertion Passed: ${actual} === ${expected}`)
     : console.log(`❗️❗️❗️Assertion Failed: ${actual} !== ${expected}`);
 };
 
-// Function
-const findKeyByValue = function (contentList, searchTerm) {
+// Function that, given an object to search and a property value, return the name of the first property whose value matches search term
+const findKeyByValue = function(contentList, searchTerm) {
   // Iterate through all properties in input object
-  for (key in contentList) {
+  for (const key in contentList) {
     // If value of the property matches search term, return the name of the property
     if (contentList[key] === searchTerm) {
       return key;
@@ -20,7 +20,7 @@ const findKeyByValue = function (contentList, searchTerm) {
 // TEST CODE
 // TV shows. keys and values are both strings
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire",
 };

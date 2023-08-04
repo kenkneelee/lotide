@@ -5,6 +5,7 @@ const assertEqual = function(actual, expected) {
     : console.log(`❗️❗️❗️Assertion Failed: ${actual} !== ${expected}`);
 };
 
+// Function that, given an array (allItems) to search and object itemsToCount {key:boolean}, return an object with key:value pairs corresponding to search:occurrences
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {

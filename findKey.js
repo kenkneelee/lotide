@@ -1,3 +1,4 @@
+// Function that, given an object and callback, loops through the object's keys and returns first key that returns truthy value from callback. Returns undefined if no matches found.
 // FUNCTION IMPLEMENTATION
 const findKey = function(object, callback) {
   // Iterate through the input object's keys

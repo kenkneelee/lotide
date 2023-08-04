@@ -1,3 +1,4 @@
+// Function that, given a sentence, returns an object with key:value pairs corresponding to characters:the positions of each occurrence of the character.
 // FUNCTION IMPLEMENTATION
 const letterPositions = function(sentence) {
   const results = {};

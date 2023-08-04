@@ -33,7 +33,7 @@ const eqObjects = function(object1, object2) {
   }
   return false;
 };
-
+// Function that prints result of object equality comparison to console
 // FUNCTION IMPLEMENTATION
 const assertObjectsEqual = function(actual, expected) {
   // Implement me!

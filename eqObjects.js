@@ -1,3 +1,4 @@
+// Function to return truthy/falsy result of object equality comparison
 // FUNCTION IMPLEMENTATION
 // Helper function for tests
 const assertEqual = function(actual, expected) {

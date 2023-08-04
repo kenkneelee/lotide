@@ -1,8 +1,10 @@
+// Function to print result of array equality comparison to console
 // FUNCTION IMPLEMENTATION
-// Function to check whether two arrays are equal
+// Import array comparison helper function
 const eqArrays = require(`./eqArrays`);
 
 const assertArraysEqual = function(array1, array2) {
+  // Call array comparison function, print assertion dependent on truthy/falsy result
   if (eqArrays(array1, array2)) {
     console.log(`✅Array Assertion Passed: [${array1}] === [${array2}]`);
   } else {

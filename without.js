@@ -37,6 +37,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
+// Function that, given a source array and itemsToRemove array, removes all instances of every item in itemsToRemove from source and returns filtered array.
 const without = function(source, itemsToRemove) {
   return source.filter((elem) => !itemsToRemove.includes(elem));
 };
