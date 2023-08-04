@@ -1,11 +1,3 @@
-// index.js
-// const head = require("./head");
-// const tail = require("./tail");
-// const middle = require("./middle");
-// const assertEqual = require("./assertEqual");
-// const eqArrays = require("./eqArrays");
-// const assertArraysEqual = require("./assertArraysEqual");
-
 // Equality and Assertion Functions
 const assertEqual = require("./assertEqual");
 const eqArrays = require("./eqArrays");

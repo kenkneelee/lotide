@@ -5,7 +5,7 @@ const assert = require("chai").assert;
 
 // TEST CASES
 describe("#map", () => {
-  // Test Case: Character party health points
+  // Test Case 1: Character party health points
   const partyHealthPoints = [100, 85, 10, 100, 100];
   // Every party member takes 5 damage
   it("returns [95, 80, 5, 95, 95]", () => {
@@ -23,7 +23,7 @@ describe("#map", () => {
     );
   });
 
-  // Test Case: Add titles to names
+  // Test Case 2: Add titles to names
   const students = ["Billy", "Joe", "Johnson"];
   // Add to ending of string
   it("returns array of concatenated strings", () => {
@@ -48,7 +48,7 @@ describe("#map", () => {
     );
   });
 
-  // Test Case: Flip boolean values
+  // Test Case 3: Flip boolean values
   const switches = [true, true, false, true, false, false, false];
   it("returns [false, false, true, false, true, true, true]", () => {
     assert.deepEqual(

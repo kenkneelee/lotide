@@ -4,26 +4,26 @@ const letterPositions = require("../letterPositions");
 const assert = require("chai").assert;
 
 // TEST CODE
-// Simple short string
+// Test Case 1: Simple short string
 const result0 = letterPositions("LHL");
 describe("#letterPositions('LHL')", () => {
-  it("returns for 'LHL'", () => {
+  it("returns correct object for 'LHL'", () => {
     assert.deepEqual(result0, { L: [0, 2], H: [1] });
   });
 });
 
-// Simple short string with repeated letters
+// Test Case 2: Simple short string with repeated letters
 const result1 = letterPositions("hello");
 describe("#letterPositions('hello')", () => {
-  it("returns for 'hello'", () => {
+  it("returns correct object for 'hello'", () => {
     assert.deepEqual(result1, { h: [0], e: [1], l: [2, 3], o: [4] });
   });
 });
 
-// Longer string with repeated characters and spaces
+// Test Case 3: Longer string with repeated characters and spaces
 const result2 = letterPositions("lighthouse in the house");
 describe("#letterPositions('lighthouse in the house')", () => {
-  it("returns for 'lighthouse in the house'", () => {
+  it("returns correct object for 'lighthouse in the house'", () => {
     assert.deepEqual(result2, {
       l: [0],
       i: [1, 11],
@@ -39,10 +39,10 @@ describe("#letterPositions('lighthouse in the house')", () => {
   });
 });
 
-// String with no repeated characters but spaces
+// Test Case 4: String with no repeated characters but spaces
 const result3 = letterPositions("The quick brown");
 describe("#letterPositions('The quick brown')", () => {
-  it("returns for 'The quick brown'", () => {
+  it("returns correct object for 'The quick brown'", () => {
     assert.deepEqual(result3, {
       T: [0],
       h: [1],
@@ -60,10 +60,10 @@ describe("#letterPositions('The quick brown')", () => {
     });
   });
 });
-// Upper and lowercase mix
+// Test Case 5: Upper and lowercase mix
 const result4 = letterPositions("aAbBcCdDeEfF");
 describe("#letterPositions('aAbBcCdDeEfF')", () => {
-  it("returns for 'aAbBcCdDeEfF'", () => {
+  it("returns correct object for 'aAbBcCdDeEfF'", () => {
     assert.deepEqual(result4, {
       a: [0],
       A: [1],

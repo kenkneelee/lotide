@@ -1,6 +1,6 @@
 // Import function to test
 const without = require("../without");
-// Function to check whether two arrays are equal
+// Import helper function for testing
 const assert = require("chai").assert;
 
 // TEST CODE

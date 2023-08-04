@@ -1,7 +1,7 @@
-// FUNCTION IMPLEMENTATION
 // Function that, given an array (allItems) to search and object itemsToCount {key:boolean}, return an object with key:value pairs corresponding to search:occurrences
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
+// FUNCTION IMPLEMENTATION
 const countOnly = function(allItems, itemsToCount) {
   // Declare empty object to store matches
   const results = {};

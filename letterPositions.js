@@ -1,6 +1,7 @@
 // Function that, given a sentence, returns an object with key:value pairs corresponding to characters:the positions of each occurrence of the character.
 // FUNCTION IMPLEMENTATION
 const letterPositions = function(sentence) {
+  // Declare empty object to store results
   const results = {};
   // logic to update results here
   // use traditional for loop instead of for..of loop to access the index easily
@@ -18,3 +19,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 module.exports = letterPositions;
+ 

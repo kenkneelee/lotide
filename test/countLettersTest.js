@@ -5,7 +5,7 @@ const assert = require("chai").assert;
 
 // TEST CODE
 describe("#countLetters", () => {
-  // String with no repeated characters
+  // Test Case 1: String with no repeated characters
   const result0 = countLetters("The quick brown");
   it("returns large object for 'The quick brown'", () => {
     assert.deepEqual(result0, {
@@ -25,13 +25,13 @@ describe("#countLetters", () => {
     });
   });
 
-  // Repeated letters
+  // Test Case 2: Repeated letters
   const result1 = countLetters("LHL");
   it("returns { L: 2, H: 1 } for 'LHL'", () => {
     assert.deepEqual(result1, { L: 2, H: 1 });
   });
 
-  // Multiple repeated letters and spaces
+  // Test Case 3: Multiple repeated letters and spaces
   const result2 = countLetters("lighthouse in the house");
   it("returns large object for 'lighthouse in the house'", () => {
     assert.deepEqual(result2, {
@@ -48,7 +48,7 @@ describe("#countLetters", () => {
     });
   });
 
-  // Upper and lowercase
+  // Test Case 4: Upper and lowercase
   const result3 = countLetters("aAbBcCdDeEfF");
   it("returns large object for 'aAbBcCdDeEfF'", () => {
     assert.deepEqual(result3, {
