@@ -1,12 +1,16 @@
 // Import function to test
 const assertEqual = require(`../assertEqual`);
 // TEST CODE
+console.log("\n#assertEqual");
+console.log("----- Should PASS: -----");
 // Test case 1:should pass, strict equality of numbers
 assertEqual(1, 1);
 // Test case 2:should pass, strict equality of strings
 assertEqual("Lighthouse", "Lighthouse");
 // Test case 3:should pass, strict equality of booleans
 assertEqual(true, true);
+
+console.log("----- Should FAIL: -----");
 // Test case 4:should fail, inequality of strings
 assertEqual("Lighthouse Labs", "Bootcamp");
 // Test case 5:should fail, different data types so not strict equality

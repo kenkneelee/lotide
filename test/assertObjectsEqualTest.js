@@ -1,6 +1,8 @@
 // Import function to test
 const assertObjectsEqual = require("../assertObjectsEqual");
 // TEST CODE
+console.log("\n#assertObjectsEqual");
+console.log("----- Should PASS: -----");
 // Test Case 1: Objects with swapped key order
 assertObjectsEqual({ a: "asd", b: 5 }, { b: 5, a: "asd" }); // Should pass
 // Test Case 2: Objects with mixed property data types
@@ -10,6 +12,7 @@ assertObjectsEqual({}, {}); // Should pass
 // Test Case 4: Objects with multiple mixed data type properties
 assertObjectsEqual({ 5: "a", a: 5, c: true }, { a: 5, 5: "a", c: true }); // Should pass
 
+console.log("----- Should FAIL: -----");
 // Test Case 5: Objects with different property values
 assertObjectsEqual({ a: "asdfas", b: 10 }, { b: 5, a: "asd" }); // Should fail
 // Test Case 6: Objects with different array values
