@@ -16,10 +16,10 @@ const without = require("./without");
 const countLetters = require("./countLetters");
 const countOnly = require("./countOnly");
 const letterPositions = require("./letterPositions");
+const findKeyByValue = require("./findKeyByValue");
 
 // Functions using Callbacks
 const findKey = require("./findKey");
-const findKeyByValue = require("./findKeyByValue");
 const map = require("./map");
 const takeUntil = require("./takeUntil");
 

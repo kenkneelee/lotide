@@ -6,7 +6,7 @@ A mini clone of the [Lodash](https://lodash.com) library.
 
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
 
-This project was created and published by me as part of my learnings at Lighthouse Labs.
+This project was created and published by me as part of my learnings at Lighthouse Labs. It includes several simple functions mostly to operate on arrays and objects. Writing Lotide helped to solidify fundamental programming concepts (FOCAL - Functions, Objects, Conditions, Arrays, Loops) and provided practice on writing modular and reusable code. 
 
 ## Usage
 
@@ -44,13 +44,12 @@ The following functions are currently implemented:
 
 ### Array and Object Manipulation
 
-- `countLetters(sentence)` : Given an input sentence, returns an object with key:value pairs corresponding to occurrences of each character
-- `countOnly(allItems, itemsToCount)` : Given an array (allItems) to search and object itemsToCount {key:boolean}, return an object with key:value pairs corresponding to search:occurrences
+- `countLetters(sentence)` : given an input sentence, returns an object with key:value pairs corresponding to occurrences of each character
+- `countOnly(allItems, itemsToCount)` : given an array (allItems) to search and object itemsToCount {key:boolean}, return an object with key:value pairs corresponding to search:occurrences
 - `letterPositions(sentence)` : Given a sentence, returns an object with key:value pairs corresponding to characters: positions of each occurrence of the character.
+- `findKeyByValue(contentList, searchTerm)` : given an object to search and a property value, return the name of the first property whose value matches search term
 
 ### Functions using Callbacks
-
 - `findKey(object, callback)`: Given an object and callback, loop through the object's keys and return first key that returns truthy value from callback. Returns undefined if no matches found.
-- `findKeyByValue(contentList, searchTerm)` : given an object to search and a property value, return the name of the first property whose value matches search term
 - `map(array, callback)` : given an array and callback, perform the callback function on every element in the array
 - `takeUntil(array, callback)` : given an array and callback, return new array with all original values until the first value that fulfills callback
