@@ -16,7 +16,7 @@ const takeUntil = function(array, callback) {
   // Return output after the loop if escape condition hasn't been met
   return output;
 };
-
+module.exports = takeUntil;
 // TEST CODE
 // HELPER FUNCTIONS
 // Helper function to check whether two arrays are equal

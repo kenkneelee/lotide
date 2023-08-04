@@ -24,6 +24,8 @@ const countLetters = function(sentence) {
   return letters;
 };
 
+module.exports = countLetters;
+
 // TEST CODE
 // String with no repeated characters
 const result0 = countLetters("The quick brown");

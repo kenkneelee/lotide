@@ -16,7 +16,7 @@ const findKeyByValue = function(contentList, searchTerm) {
     }
   }
 };
-
+module.exports = findKeyByValue;
 // TEST CODE
 // TV shows. keys and values are both strings
 const bestTVShowsByGenre = {

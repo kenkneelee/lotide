@@ -11,6 +11,8 @@ const findKey = function(object, callback) {
   }
   // Returns undefined if no matching key is found
 };
+
+module.exports = findKey;
 // TEST CODE
 // HELPER FUNCTIONS
 const assertEqual = function(actual, expected) {

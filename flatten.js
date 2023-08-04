@@ -51,7 +51,7 @@ const flatten = function(nestedArray) {
   }
   return finalArray;
 };
-
+module.exports = flatten;
 // TEST CODE
 // Test Case: Array of arrays
 assertArraysEqual(

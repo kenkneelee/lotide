@@ -57,6 +57,8 @@ const eqObjects = function(object1, object2) {
   return false;
 };
 
+module.exports = eqObjects;
+
 // TEST CODE
 
 // Test case: All properties are strings

@@ -41,7 +41,7 @@ const assertArraysEqual = function(array1, array2) {
 const without = function(source, itemsToRemove) {
   return source.filter((elem) => !itemsToRemove.includes(elem));
 };
-
+module.exports = without;
 // TEST CODE
 // Test Case: Arrays of numbers
 assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);

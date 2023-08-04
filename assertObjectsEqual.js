@@ -54,5 +54,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertObjectsEqual;
+
 assertObjectsEqual({ a: "asd", b: 5 }, { b: 5, a: "asd" }); // Should pass
 assertObjectsEqual({ a: "asdfas", b: 10 }, { b: 5, a: "asd" }); // Should fail

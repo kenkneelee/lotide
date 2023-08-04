@@ -17,7 +17,7 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-
+module.exports = letterPositions;
 // TEST CODE
 // TEST HELPER FUNCTIONS
 // Function to check whether two arrays are equal
