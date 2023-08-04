@@ -48,4 +48,12 @@ describe("#flatten", () => {
   it("returns [1,2,3,4,5,6] for [1,2,[3,4],5,[6]]", () => {
     assert.deepEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
   });
+  // Test Case 7: Two-level nested array
+  it("returns [1,2,3,4,5,6] for [1,[2],[3,[4]], 5,[6]", () => {
+    assert.deepEqual(flatten([1, [2], [3, [4]], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+  });
+  // Test Case 8: Three-level nested array
+  it("returns [1,2,3,4,5,6] for [[1,[2,[3]]],[3,[4]], 5,[6]", () => {
+    assert.deepEqual(flatten([[1, [2,[3]]], [3, [4]], 5, [6]]), [1, 2, 3, 3, 4, 5, 6]);
+  });
 });
