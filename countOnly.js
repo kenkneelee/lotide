@@ -1,17 +1,13 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  actual === expected
-    ? console.log(`🚀🚀🚀Assertion Passed: ${actual} === ${expected}`)
-    : console.log(`❗️❗️❗️Assertion Failed: ${actual} !== ${expected}`);
-};
-
 // Function that, given an array (allItems) to search and object itemsToCount {key:boolean}, return an object with key:value pairs corresponding to search:occurrences
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
+  // Declare empty object to store matches
   const results = {};
+  // Iterate through each item
   for (const item of allItems) {
-    console.log(item);
+    // If the property exists, increment. Otherwise, initialize at 1
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item]++;
@@ -24,28 +20,3 @@ const countOnly = function(allItems, itemsToCount) {
 };
 
 module.exports = countOnly;
-
-// TEST CODE
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe",
-];
-
-const result1 = countOnly(firstNames, {
-  Jason: true,
-  Karima: true,
-  Fang: true,
-  Agouhanna: false,
-});
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
