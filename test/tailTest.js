@@ -1,5 +1,8 @@
-const assert = require("chai").assert;
+// Import function to test
 const tail = require(`../tail`);
+// Import helper function for testing
+const assert = require("chai").assert;
+
 
 // TEST CODE
 describe("#tail", () => {

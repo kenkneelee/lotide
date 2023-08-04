@@ -1,6 +1,9 @@
-const assert = require("chai").assert;
+// Import function to test
 const head = require("../head");
+// Import helper function for testing
+const assert = require("chai").assert;
 
+// TEST CODE
 describe("#head", () => {
   // array of numbers
   it("returns 1 for [1, 2, 3]", () => {
