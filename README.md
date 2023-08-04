@@ -50,6 +50,6 @@ The following functions are currently implemented:
 - `findKeyByValue(contentList, searchTerm)` : given an object to search and a property value, return the name of the first property whose value matches search term
 
 ### Functions using Callbacks
-- `findKey(object, callback)`: Given an object and callback, loop through the object's keys and return first key that returns truthy value from callback. Returns undefined if no matches found.
+- `findKey(object, callback)`: given an object and callback, loop through the object's keys and return first key that returns truthy value from callback. Returns undefined if no matches found.
 - `map(array, callback)` : given an array and callback, perform the callback function on every element in the array
 - `takeUntil(array, callback)` : given an array and callback, return new array with all original values until the first value that fulfills callback
