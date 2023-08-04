@@ -1,6 +1,6 @@
 // Function that given nested array, flattens inside arrays and moves them one level up
 // FUNCTION IMPLEMENTATION
-const flatten = function (nestedArray) {
+const flatten = function(nestedArray) {
   let finalArray = [];
   for (let elem of nestedArray) {
     if (Array.isArray(elem)) {

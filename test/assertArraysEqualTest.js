@@ -1,7 +1,7 @@
 // Import function to test
 const assertArraysEqual = require(`../assertArraysEqual`);
 // TEST CODE
-console.log ("#assertArraysEqual")
+console.log("#assertArraysEqual");
 console.log("----- Should PASS: -----");
 // Test case 1:Equal arrays of numbers
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // Should PASS
